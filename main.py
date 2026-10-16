@@ -65,7 +65,7 @@ PRODUCTS = (
      "Naturally sweet dried figs with a pleasantly chewy centre."),
     ("Premium Walnut Kernels", "Walnuts", 549, 749, "200 g", 4.6, "🤎",
      "Fresh, crisp walnut halves packed to preserve their flavour."),
-    ("NUTRINUTS Trail Mix", "Mixes", 299, 399, "250 g", 4.8, "✨",
+    ("NUTRINUTS Trail Mix", "Mixes", 300, 399, "250 g", 4.8, "✨",
      "A balanced snack mix of nuts, raisins, and dried fruit."),
 )
 
