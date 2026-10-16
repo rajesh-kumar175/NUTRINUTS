@@ -560,14 +560,14 @@ class NutrinutsApp:
                 parent=self.root,
             )
 
-        ttk.Button(frame, text="Place order · Cash on delivery",
+        ttk.Button(frame, text="Place order · Cash on delivery", 
                    style="Accent.TButton", command=submit).grid(
                        row=4, column=0, columnspan=2, sticky="ew", pady=(13, 0)
                    )
 
     def show_orders(self) -> None:
         orders = self.store.orders()
-        dialog = tk.Toplevel(self.root)
+        dialog = dialog = tk.Toplevel(self.root)
         dialog.title("Order history")
         dialog.geometry("650x410")
         dialog.configure(bg=BACKGROUND)
@@ -602,7 +602,7 @@ class NutrinutsApp:
         details = tk.Text(frame, height=5, font=("Segoe UI", 9), wrap="word",
                           state="disabled")
         details.pack(fill="x", pady=(10, 0))
-
+        
         def show_selected(_event: object = None) -> None:
             selected = tree.selection()
             if not selected:
@@ -626,6 +626,7 @@ def main() -> None:
     store = ShopStore()
     root = tk.Tk()
     NutrinutsApp(root, store)
+    
     root.mainloop()
 
 
